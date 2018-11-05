@@ -29,8 +29,8 @@ utils :
   
 05/11
 
-Oussama : formulaire connexion, Authenticate.php
+Oussama : formulaire inscription, Register.php
 
-Bastien : formulaire inscription, Register.php
+Bastien :  formulaire connexion, Authenticate.php
 
 Yohan : ??
