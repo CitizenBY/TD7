@@ -1,29 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Register</title>
-    
-</head>
-<center><h1> Welcome to our Miage blog </h1>
-<h2>Registration</h2></center>
-<body>
-<center><form action="" method="post"> 
-    <?php 
-    $inputs =array(
-    "Firstname"=>"firstname","Lastname"=>"Lastname",
-    "Username"=>"username","Password"=>"Password","E-mail"=>"email","Phone_Number"=>"Phone Number");
-    foreach ($inputs as $key=>$input)
-    {
-        echo '<input name='.$key.' placeholder='.$input.'></p>';
-    };
-    ?>
-    <p><select name="Gender">
-    <option value="Gender" selected="selected">Gender</option>
-    <option value="Female">Female</option>
-    </select></p>
-    <input type='submit' value='Envoyer'/></center>
-    
-</body>
-</html>
+<?php 
+include_once(_DIR_."/../Utils/userutils.php");
+$Firstname=$_POST["Firstname"];
+$Lastname=$_POST["Lastname"]; $Password=$_POST["Password"];
+$Email=$_POST["E-mail"];$Phone_Number=$_POST["Phone_Number"];
+$Gender=$_POST["Gender"];
+addUser($Firstname,$Lastname,$Password,$Email,$Phone_Number,$Gender);
+?>
