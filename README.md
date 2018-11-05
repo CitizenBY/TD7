@@ -33,4 +33,4 @@ Oussama : formulaire inscription, Register.php
 
 Bastien :  formulaire connexion, Authenticate.php
 
-Yohan : ??
+Yohan : article.php
