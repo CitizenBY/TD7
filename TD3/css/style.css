@@ -1,0 +1,24 @@
+form{
+	width: 300px; 
+	margin: auto; 
+}
+
+
+
+fieldset{
+	border: 1px solid #a03409;
+}
+
+.errors{
+	color: red;	
+	font-weight: bold; 
+	text-align: center; 
+}
+
+#se-connecter{
+	background-color: #0f90cc; 
+	color: #fff; 
+	border: none; 
+	padding: 4px 10px; 
+}
+
