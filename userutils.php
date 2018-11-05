@@ -27,3 +27,23 @@ function getAllArticles(){
 
   return $id;
 }
+
+function addUser($username,$password,$firstname,$lastname,$phone,$email,$gender){
+  $mysql=connect();
+
+  $query="INSERT INTO user(username,password,firstname,lastname,phone,email,gender)
+  VALUES(:username, :password, :firstname, :lastname, :phone, :email, :gender)";
+
+  $req = $mysql->prepare($query);
+  $data = array(
+    "username" => $username,
+    "password" => $password,
+    "firstname" => $firstname,
+    "lastname" => $lastname,
+    "phone" => $phone,
+    "email" => $email,
+    "gender" => $gender
+  );
+  execute($req,$data);
+
+}
