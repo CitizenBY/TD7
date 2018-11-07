@@ -34,6 +34,6 @@
     <input type="password", name="password", value="", placeholder="password"/></p>
     <input type="submit", name="sign in", value="sign in", placeholder="sign in"/>
     </form>
-    <a href="localhost/TD7/register.php">if you don't have a account, please register here </a>
+    <a href="registerform.php">if you don't have a account, please register here </a>
 </body>
 </html>
