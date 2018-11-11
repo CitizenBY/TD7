@@ -10,7 +10,7 @@
     <h1 style="background:white"> Welcome to our Miage blog </h1>
     <center><h2 style="background:lightgray; width: 50%;border-radius:1000px; ">Registration</h2></center>
 
-<body>
+<body style="background:lightgoldenrodyellow">
     <center><form style="border: 2px solid lightblue;border-radius: 10px" action="" method="post"> 
         <p><?php 
         $inputs =array(
