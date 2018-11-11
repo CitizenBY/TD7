@@ -1,0 +1,99 @@
+body{
+    background-color: rgb(245, 245, 174) ;
+}
+
+fieldset{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 10px solid lightblue;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    color: lightskyblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2 { 
+    text-align: center;
+    color: rgb(99, 72, 57);
+    font-style: italic;
+}
+legend{
+    text-align: center;
+    color: darkgrey;
+}
+
+#lien{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 3px solid lightblue;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    color:black;
+    font-size: 150%
+} 
+
+input[type=text] {
+    width: 20%;
+    padding: 7px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+    text-align: center;
+}
+input[type=password] {
+    width: 20%;
+    padding: 7px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+    text-align: center;
+}
+    input[type=password] {
+        background-color: white;
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding-left: 40px;
+    }
+
+input[type=submit] {
+    width: 10%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type=password]:hover {
+    border:3px solid lightblue;
+}
+input[type=text]:hover{
+    border: 3px solid lightblue;
+}
+
+#selecteur{
+    color:black;
+    background: lightblue;
+    border: rgb(2, 2, 77);
+    cursor: crosshair;
+    margin: 8px 0;
+    border-radius: 30px;
+    padding: 7px 12px;
+
+
+
+
+}
