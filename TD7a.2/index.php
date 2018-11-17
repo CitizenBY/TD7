@@ -13,32 +13,38 @@ if(isset($_GET["signup"])){//page register
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/style.css">
     <title>Register</title>
     
 </head>
-    <h1 style="background:white"> Welcome to our Miage blog </h1>
-    <center><h2 style="background:lightgray; width: 50%;border-radius:1000px; ">Registration</h2></center>
+    <h1> Welcome to our Miage blog </h1>
+    <h2>REGISTRATION</h2>
 
-<body style="background:lightgoldenrodyellow">
+<body>
     <center>
-    <form style="border: 2px solid lightblue;border-radius: 10px" action="" method="post"> 
-        <p><?php 
-        $inputs =array(
-        "Firstname"=>"firstname","Lastname"=>"Lastname",
-        "Username"=>"username","Password"=>"Password","E-mail"=>"email","Phone_Number"=>"Phone Number");
-        foreach ($inputs as $key=>$input)
-        {
-            echo '<input id="text" name='.$key.' placeholder='.$input.'></p>';
-        };
-           ?>
+    <form action="" method="post"> 
+        <div id="formulaire">
+        <input type="text" name="firstname" value="" placeholder="Firstname"></br>
+        <input  type="text" name="lastname" value="" placeholder="Lastname"></br>
+        <input  type="text" name="username" value="" placeholder="Username"></br>
+        <input  type="text" name="password" value="" placeholder="Password"></br>
+        <input  type="text"  name="email" value="" placeholder="E-mail"></br>
+        <input  type="text" name="phone" value="" placeholder="Phone"></br>
+        </div>
+    </form>
+    
+    <div>
            <p><select id="selecteur" name="Gender" value="Gender">
             <option value="Male" selected="selected">Male</option>
             <option value="Female">Female</option>
             </select></p>
-    </form>
-        <input id="se-connecter" type='submit' value='SEND' /></center>
+        <input id="se-connecter" type='submit' value='SEND' />
+    </div>
+
+    </center>
+</body>        
 </html>
+
 
 
 <?php
@@ -55,31 +61,29 @@ else{//page sign in
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Register</title>
     <link rel="stylesheet" href="./css/style.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
-<body style="background:lightgoldenrodyellow"> 
-<?php
-    if(isLoggedIn()){
-        echo "victoire";
-        // header("Location :".__DIR__."/./home.php");
-    }
-?>
+<body> 
+    <?php
+        if(isLoggedIn()){
+            echo "victoire";
+            // header("Location :".__DIR__."/./home.php");
+        }
+    ?>
 
-        <center><fieldset style="background:lightblue;width: 50%;border-radius:1000px;"> <h1 style="background:lightblue;font-family:Tahoma">Welcome to our MIAGE blog</h1></fieldset></center>
-        <b><h2 style="color:Tan; font-family: courier;">SIGN IN</b></h2>
-<fieldset>
-    <form  name="connection" method="POST" action="./scripts/authenticate.php">
-            <i class="glyphicon glyphicon-user"></i>
+        <h1>Welcome to our MIAGE blog</h1>
+        <h2>SIGN IN</h2>
 
+    <div id="sign_in">
+     
+            <form  name="connection" method="POST" action="./scripts/authenticate.php">
             <input  type="text", name="username", value="", placeholder="Username" required/></p> 
-            <i class="glyphicon glyphicon-lock"></i>
             <input  type="password", name="password", value="", placeholder="Password" required/></p>
             <input id="se-connecter"  type="submit", name="sign in", value="sign in", placeholder="sign in"/></i></p>
-    </form>
-</fieldset>
-
+            </form>
+        
+    </div>
     
-    <a id="lien" href="index.php?signup=True"><i class="glyphicon glyphicon-exclamation-sign"></i> If you don't have an account! Please register here..<i class="glyphicon glyphicon-menu-right"></i> </a>
+    <a id="lien" href="index.php?signup=True"></i> If you don't have an account! Please register here..<i class="glyphicon glyphicon-menu-right"></i> </a>
  
 </body>
 </html>
