@@ -43,7 +43,7 @@ function Connection($username,$password){
     }
 
     else{
-      // setcookie("user", $username, time() + 3600 * 24 * 7, "/", "", false, true);
+     // setcookie("user", $username, time() + 3600 * 24 * 7, "/", "", false, true);
       $_SESSION["user"] = $username;
       return "victoire";
     }
@@ -54,11 +54,11 @@ function Connection($username,$password){
 function getAllArticles(){
     $mysql = connect();
 
-  $query = "SELECT title, content, date, username
-  FROM article A
-  LEFT JOIN user U
-  ON A.user_id = U.id
-  ORDER BY date desc";
+    $query = "SELECT title, content, date, username
+    FROM article A
+    LEFT JOIN user U
+    ON A.user_id = U.id
+    ORDER BY date desc";
 
   $req = $mysql->prepare($query);
   execute($req);

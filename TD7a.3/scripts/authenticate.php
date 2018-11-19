@@ -2,10 +2,8 @@
 include_once(__DIR__."/../utils/userUtils.php");
 $username=$_POST['username'];
 $password=$_POST['password'];
-$status = Connection($username,$password);
-var_dump($status);
-// header("Location :"__DIR__."./../index.php");
-
+$wrong = Connection($username,$password);
+echo $wrong;
 
 // try{
 //     login($username,$password);
