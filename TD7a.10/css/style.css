@@ -1,0 +1,281 @@
+body {
+    font-size: 100%;
+    background-image: url("MIAGE BLOG.png");
+    background-repeat: repeat-x;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.erreur {
+
+    color: red;
+}
+.pagehead {
+    overflow: hidden;      
+}
+.pagehead p {
+    float: left;
+    display: block;
+    color: BurlyWood;
+    text-align: center;
+    padding: 0px 0px;
+    text-decoration: none;
+}
+.static > li {
+
+    color: green;
+
+}
+.art{
+    color: rgb(61, 52, 29);
+    text-align: justify;
+    font-family: Tahoma;
+    background-color: beige;
+}
+.date {
+    color: orangered;
+    text-decoration: underline;
+    border: 2px;
+}
+
+.profile{
+    text-align: center;
+    color: #690000de;
+    font-size: 20px;
+    font-family: Tahoma;
+    font-style: initial;
+    background-color: rgba(245, 245, 220, 0.185);
+}
+
+#create input {
+    border: 20px;
+    border-color: green;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#sub_art{
+    width: 200px;
+    background-color: rgb(15, 194, 185);
+    color: white;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border: 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.pagehead p:hover  {
+    background-color: rgba(20, 247, 152, 0.705);
+    color: rgb(230, 163, 163);
+    font-family: tahoma;
+
+}
+header p {
+    font-family: bolder; 
+    text-shadow: 3px 2px rgb(136, 17, 17);
+     font-size: 30px;
+     font-weight: bold;
+     float: left;
+}
+
+header { 
+    position: absolute;
+    height: 100px ;
+    top: 0px;
+    width: 1365px;
+    left: 0px;
+    background-image: url("")
+} 
+
+section {
+    position: absolute;
+    height: 520px ;
+    top: 150px;
+    width: 1200px;
+    left: 0px;
+}
+
+h1 {
+    text-align: absolute;
+    color: seagreen;
+    font-family: Tahoma;
+    text-align: center;
+    border-style: outset;
+    background-color: rgba(175, 123, 55, 0.877); 
+   
+}
+
+h2 { 
+    text-align: center;
+    color: rgba(170, 128, 72, 0.877); 
+    font-style: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+h3 {
+    font-family: Tahoma; 
+    text-shadow: 3px 2px rgb(211, 144, 144);
+    color: rgba(20, 247, 152, 0.705);
+    font-style: inherit;
+}
+
+h4 {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(122, 89, 46);
+    font-size: 20px;
+    text-align: center;
+    border-style: outset;
+    margin-left: 30px;
+    background-color: rgba(127, 255, 212, 0.562);
+    font-size: 30px;
+    
+}
+
+.deletebtn {
+    font-size: 20px;
+    color: rgba(155, 43, 35, 0.979);
+    text-align: right;
+    font-family: tahoma;    
+}
+
+.static {
+
+    position: static;
+    border: 3px solid #73AD21;
+    border-style: outset;
+    padding: 10px;
+    margin: 30px;
+}
+
+div > li {
+    float: right;
+    text-align: justify;
+    display: inline;
+    margin: 20px;
+    padding-left: 20px;
+}
+
+#lien {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    color: black;
+    font-size: 150%
+} 
+
+#lien:hover {
+    color: royalblue;
+    font-size: 30px; 
+}
+
+input[type=text] {
+    width: 20%;
+    padding: 7px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 77, 192, 0.329);
+    outline: none;
+    text-align: center;
+}
+
+input[type=text]:hover{
+    background-color: rgba(173, 216, 230, 0.692);
+    border: 3px solid gold;
+}
+
+.case {
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 77, 192, 0.329);
+    margin: 30px;
+    padding: 50px;
+
+}
+
+input[type=password] {
+    width: 20%;
+    padding: 7px 20px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 3px solid rgba(0, 77, 192, 0.329);
+    outline: none;
+    text-align: center;
+    text-decoration: underline;
+}
+
+input[type=password]:hover{
+        background-color: rgba(173, 216, 230, 0.616);
+        padding-left: 40px;
+        border:3px solid rgb(173, 216, 230);
+        border:3px solid gold;
+    }
+
+input[type=submit] {
+    width: 100px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border: 10px;
+    border-radius: 100px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#selecteur {
+    color:black;
+    background: rgb(224, 221, 64);
+    border: rgb(0, 0, 0);
+    cursor: crosshair;
+    margin: 5px 0;
+    border-radius: 50px;
+    padding: 7px 12px;
+}
+
+.formcreate {
+    width: 80%;
+    padding: 10px 10px;
+    margin: 5px 0;
+    border: 10px solid rgba(20, 247, 152, 0.705);
+    text-align: center;
+    padding: 10px;
+    margin-left: 180px;
+}
+
+#articles{
+    text-align: center;
+    position: static;
+    border: 3px solid #73AD21;
+    border-style: ridge;
+    background-color: rgba(20, 247, 152, 0.705);
+    padding: 10px 7px;
+    margin-left: 50px;
+}
+
+.formm:hover {
+    width: 80%;
+    padding: 10px 0px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 230, 0);
+    text-align: center;
+    padding: 10px;
+}
+p.datee {
+    text-align: center;
+    font-size: 20px;
+}
+
+#sing_in {
+    text-align: center;
+}
+
+#create_article {
+    border-color: #4CAF50;
+    border : 5px;
+}
+
+
+
